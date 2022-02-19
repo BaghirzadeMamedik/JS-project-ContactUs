@@ -1,3 +1,9 @@
+.containerr{
+  width: 85%;
+  margin: auto;
+}
+
+
 .sectionOne {
   .backImage {
     position: relative;
@@ -52,7 +58,7 @@
 .sectionTwo {
   width: 99%;
   height: 150vh;
-  img {
+  .back {
     margin-top: 100px;
     margin-left: 55px;
     object-fit: cover;
@@ -67,63 +73,44 @@
     }
     span {
       color: #9b9bb5;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
-
   .boxes {
-    margin-top: 50px;
-    margin-left: 30px;
-    // display: inline ;
-    .leftSide {
-      width: 10%;
-      i {
-        display: inline;
-        color: #4e97fd;
-        font-size: 40px;
-      }
-      span {
-        margin-top: 20px;
-        color: #9b9bb5;
-        // display:   inline-block;
-        font-weight: 700;
-      }
-      h4 {
-        display: inline-block;
-      }
+    margin-top: 20px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    i {
+      color: #4e97fd;
+      font-size: 35px;
+      //  margin-top: 20px;
+      // display: inline-block;
+    }
+    h6 {
+      display: inline-block;
+      font-size: 15px;
+      color: #9b9b9b;
+      font-weight: bold;
+      margin-left: 20px;
+      //  margin-top: -300px;
+    }
+    p {
+      display: inline-block;
+      margin-left: 55px;
+      font-size: 24px;
+      // font-family: cursive;
+      font-weight: 500;
     }
   }
-  // .left-ico{
-  //   width: 10%;
-  //   height: 100vh;
-
-  //   i {
-  //     display: block;
-  //     margin-top: 50px;
-  //     margin-bottom: 90px;
-  //     // width: 4px;
-
-  //   }
-  // }
-
-  // span {
-  //   margin-left: 30px;
-
-  //   margin-top: 20px;
-  //   color: #9b9bb5;
-
-  //   font-weight: 700;
-  // }
-
-  // h4 {
-  //   display: inline;
-  //   width: 70%;
-  // }
+  .circle {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    z-index: -1;
+  }
 }
-.sectionThree {
-  // width: 100%;
-  // height: 100vh;
-}
+
 .sectionFour {
   height: 100vh;
   margin-top: 70px;
@@ -136,24 +123,115 @@
     font-size: 17px;
     margin-bottom: 50px;
   }
-  input {
-    border: 2px solid #eee;
-    padding: 5px 10px 5px 50px;
-    font-size: 18px;
-    line-height: 30px;
-    outline: 0;
-    display: block;
-    width: 100%;
-}
-.icon {
+  .home-input {
+    width: 80%;
+    margin: auto;
+  }
+
+  .check-icon {
+    right: 0px;
     position: absolute;
-    left: 15px;
-    top: 0;
-    font-size: 25px;
-    color: #4b00ff;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 2px;
+  }
+
+  .times-icon {
+    left: 350px;
+    position: absolute;
+    top: 20px;
+    color: #666666;
+    font-size: 17px;
+  }
+  input {
+    padding: 18px 100px;
+    margin-left: 10px;
+    border: 2px solid #e9e9e9;
+  }
+
+  .icon-input {
+    padding-right: 0px;
+  }
+
+  textarea {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 2px solid #e9e9e9;
+  }
+
+  button {
+    background-color: #4e97fd;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 37px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 43%;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: #e4573d;
+    }
+  }
 }
+
+.sectionFive {
+  height: 50vh;
+  margin-left: 50px;
+  .image-box {
+    margin-left: -8px;
+    display: inline-block;
+    // transition: 0.3s ease-in-out;
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+    
+    position: relative;
+    img {
+      height: 210px;
+      width: 210px;
+      transition: 0.3s ease-in-out;
+      
+    }
+    i{
+      // opacity: 1;
+      top: -100px;
+      left: 80px;
+      // margin-left: 50%;
+      font-size: 60px;
+      z-index: 10;
+      color: white;
+      transition: 0.3s ease-in-out;
+      position: absolute;
+    }
+   
+    &::before{
+      position: absolute;
+      content: "";
+      left: 4%;
+      top: 0;
+      height: 100%;
+      width: 96%;
+      
+      transition: 0.3s ease-in-out;
+    
+    }
+     
+    &:hover {
+ &::before{
+  
+    background-color: #00324277;
+  
+ }
+      i{
+        transform: translateY(160px);
+        // opacity: 1;
+      }
+    }
+  }
 }
